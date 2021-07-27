@@ -1,0 +1,777 @@
+:root{
+    /*colores*/
+    --black:#000000;
+    --LightO: #f0a500;
+    --orange:#f77700;
+    --white:#ffffff;
+    --Grey: #969696;
+    --Bluyes: #48C996;
+}
+
+@import url('https://fonts.googleapis.com/css2? familia=Delius&display=swap');
+
+
+/*MENÚ DE NAVEGACIÓN*/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff; /*Fondo del menú*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu .logo-box{
+    margin-left: 20px;
+}
+.menu .logo-box img{
+    /*TAMAÑO DEL LOGO*/
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+}
+
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+}
+.menu .list-container .lists li {
+    list-style: none;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 15px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menu .list-container .lists li a.lists{
+    background: var(--LightO);
+    color: #fff;
+}
+.menu .list-container .lists li a:hover{
+    background: var(--LightO);
+    color: #fff;
+}
+.btn-menu > .fa-bars{
+    display: none;
+}
+/*FIN MENÚ DE NAVEGACIÓN*/
+
+/*IMG HEADER*/
+.img-header{ 
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url(../img/pizza_portada.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Sombra sobre la imagen*/
+.img-header .welcome{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header .welcome h1{
+    font-size:50px ;
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+
+.img-header .welcome p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.img-header .welcome > button{
+    width: 170px;
+    height: 40px;
+    background: var(--orange);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-header .welcome > button:hover{
+    background: var(--LightO);
+}
+
+/*FIN IMG HEADER*/
+
+
+/*================================================================================*/
+/*================================================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    /*overflow: hidden;*/ /*BARRA*/
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*================================================================================*/
+/*================================================================================*/
+
+/*REPARTIR LA MITAD DE NUESTRO CUADRIÑO MIJOO*/
+.contenedor-nosotros{
+    padding: 30px;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cocina{
+    width: 619px;
+    height: 584px;
+}
+
+.contenido-texto{
+    width: 40%;
+}
+
+.contenido-texto h2{
+    color: #735111;
+    font-family: 'Delius', cursiva;
+    font-size: 70px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: block;
+}
+
+.contenido-texto h1{
+    color: #735111;
+    font-family: sans-serif;
+    font-size: 80px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: block;
+}
+
+.contenido-texto h3{
+    margin-bottom: 10px;
+}
+.contenido-texto p{
+    font-weight: 30%;
+    text-align: justify;
+    padding: 0px 0px 20px 0px;
+}
+
+.contenedor-nosotros .contenedor-sobre-nosotros  .contenido-texto .about-more{ 
+    /*Ubicación del botón*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-nosotros .contenedor-sobre-nosotros .contenido-texto .about-more button{
+    /*Estilo del botón*/
+    width: 120px;
+    height: 40px;
+    background: var(--orange);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.galeria .item .about-more{ 
+    /*Ubicación del botón*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.galeria .item .about-more button{ 
+    /*Estilo del botón*/
+    width: 120px;
+    height: 40px;
+    background: var(--orange);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+/*================================================================================*/
+/*================================================================================*/
+
+.contenedor-zoom{
+    padding: 30px;
+}
+
+.contenedor-zoom-img{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.pizza{
+    width: 500px;
+    height: 650px;
+}
+.contenido-zoom-texto{
+    padding: 250px 0px 0px 0px;
+    width: 40%;
+    height: 60%;
+    align-content: center;
+}
+
+.contenido-zoom-texto p{
+    text-align: center;
+    font-size: 30px;    
+}
+
+.contenido-zoom-pizza-capag {
+    position: relative;
+    overflow: hidden;
+}
+
+.contenido-zoom-pizza-capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    /*rgba(0,0,0,0.5)*/
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: scale(0);
+    transition: .3s ease;
+    text-align: center;
+}
+
+.contenido-zoom-pizza-capag:hover .contenido-zoom-pizza-capa{
+    transform: scale(1);
+}
+
+/*================================================================================*/
+/*================================================================================*/
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: url(../img/pizza_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.banner .banner-color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner .banner-color-contenedor{
+    position: relative; 
+    width: 50%;
+    height: 100%;
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+
+
+
+/*================================================================================*/
+/*================================================================================*/
+
+ 
+/*FOOTER: PIE DE PAGINA*/
+footer{
+    background: #000000;
+    padding: 10px 0 30px 0;
+    margin: auto;
+    overflow: hidden;;
+}
+
+.redes-sociales{
+    text-align: center; 
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #969696;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 10px;
+    margin: 20px 0 0 0;
+    color: #969696
+}
+
+
+/*================================================================================*/
+/*=======================PAGINA NOSOTROS=========================================================*/
+
+/*IMG HEADER*/
+.img-header2{ 
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url(../img/pizza_portada2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Sombra sobre la imagen*/
+.img-header2 .welcome{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header2 .welcome h1{
+    font-size:50px ;
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-header2 .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+
+
+
+/*MISIÓN Y VISIÓN*/
+/*IMAGENES*/
+.contenedor-galeria{
+    width: 100%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 10em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 150px;
+}
+
+.item-galeria{
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0,.095);
+    transition: all 500ms;
+}
+
+/*Mouse sobre imagen*/
+.item-galeria:hover{
+    transform: scale(1.05);
+}
+
+.item-text{
+    padding: 0.5em;
+    text-align: center;
+}
+
+.item-img{
+    max-width: 40%;
+    
+}
+
+.nosotros_senor{
+    width: 500px;
+    height: 700px;
+}
+
+.contenedor-video{
+    position: relative;
+    overflow: hidden;
+    padding-top: 20%;
+    /*border: 3px solid red;*/
+}
+
+.contenedor-video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*================================================================================*/
+/*=======================PAGINA PIZZAS=========================================================*/
+
+
+/*IMG HEADER*/
+.img-header3{ 
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url(../img/pizza_pizzas.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Sombra sobre la imagen*/
+.img-header3 .welcome{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header3 .welcome h2{
+    
+    font-size:30px ;
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-header3 .welcome h1{
+    font-size:60px ;
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-header3 .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+
+
+
+/*TITULO*/
+.lineas-negocio{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contenedor-linNeg{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor-linNeg h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*IMAGENES*/
+.galeria{
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.item{
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0,.095);
+
+    transition: all 300ms;
+}
+
+/*Mouse sobre imagen*/
+.item:hover{
+    transform: scale(1.05);
+}
+
+.item-text{
+    padding: 1em;
+}
+
+.item-img-pizza{
+    max-width: 100%;
+    display: block;
+}
+
+.item-img-pizza1{
+    max-width: 100%;
+    display: block;
+}
+
+
+/*================================================================================*/
+/*=======================PAGINA ORDENAR=========================================================*/
+
+.contenedor-info{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/*INFORMACIÃ“N DE CONTACTO*/
+.contenedor-informacion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 50%;
+    padding: 40px 0px 0px 30px;
+}
+/*================================================================================*/
+/*=======================FORMULARIO=========================================================*/
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    background: url(../img/pizza_fondido.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer .deg-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.footer .footer-content{
+    width: 100%;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.footer .footer-content .footer-title{
+    width: 40%;
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 15px;
+}
+
+.footer .footer-content .footer-title h2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .footer-title hr{
+    width: 50%;
+    margin: auto;
+}
+
+/*================================================================================*/
+/*=======================LOGIN=========================================================*/
+
+.logini{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+   background: url(../img/pizza_fondido.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: cadetblue;
+}
+
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+.formulario-content{
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    margin: 40px auto;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.formulario-content #Formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formulario-content #Formulario input{
+	width: calc(100% - 20px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px;
+	border: 1px solid var(--black);
+    border-radius: 5px;
+
+}
+
+
+.formulario-content #Formulario .send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.formulario-content #Formulario .send button{
+    width: 150px;
+    height: 40px;
+    background: var(--Bluyes);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.formulario-content #Formulario .send button:hover{
+    background: var(--black);
+}
+
+
+
